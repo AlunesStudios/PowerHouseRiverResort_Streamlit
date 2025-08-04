@@ -1,6 +1,6 @@
 import streamlit as st
 from PIL import Image
-Main_Image = Image.open("PRR_Main_Image.png")
+Main_Image = Image.open("PRR_Main_image.png")
 #---------------------------------------#
 st.set_page_config(page_icon=Main_Image, page_title="PowerHouse River Resort")
 st.image(Main_Image, width=250)
