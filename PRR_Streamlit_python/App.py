@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 from datetime import date, timedelta
-Main_Image = Image.open("PRR_Main_image.png")
+Main_Image = Image.open("PRR_Image.jpg")
 st.set_page_config(page_title="PowerHouse River Resort")
 st.image(Main_Image, width=250)
 st.logo(Main_Image)
