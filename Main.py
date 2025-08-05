@@ -3,7 +3,7 @@ from PIL import Image
 Main_Image = Image.open("PRR_Main_image.png")
 #---------------------------------------#
 st.set_page_config(page_icon=Main_Image, page_title="PowerHouse River Resort")
-st.image(Main_Image, width=350)
+st.image(Main_Image, width=250)
 st.header("PowerHouse River Resort", divider="green")
 st.markdown("**Tented resort facing the river with gentle rocking spacious swings..Relax & Enjoy the river bath in Crystal Clear Water and enjoy the lullaby like soothing rippling sounds from the river... Resort located bordering two streams (island) with Cascading Waterfalls where you can select whether to tryout the mesmerising Waterfall or the calm pool like water bed where you can enjoy unpolluted nature with Kingfishers or big . Experience walking through our Tea Plantation & Tea plucking and choose the tips you want to have a nice cup of green tea. The Restaurant is located inside the Mini Hydro where our customers can enjoy nice meals whether it will be plain rice and curry where the veggies comes from our organic vegetable garden, or a musical koththu or a scrumptious BBQ! Come and experience the Srilnkan Gray Hornbills and Endemic flying around. The natural fish therapy whenever you feels like. Enjoy all of these and work while you relax!**")
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
@@ -12,6 +12,14 @@ custom_css = """<style>.map-frame {border-radius: 20px; /* Adjust this value for
 st.markdown(custom_css, unsafe_allow_html=True)
 st.markdown(google_map_iframe, unsafe_allow_html=True)
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
+st.write("")
+st.write("")
+st.write("")
+st.write("")
+youtube_video = """<iframe width="800" height="440" src="https://www.youtube.com/embed/gnJDmQ674DU" title="Visit Powerhouse River Resort..." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" class="yt" allowfullscreen></iframe>"""
+custom_css_yt = """<style>.yt {border-radius: 20px; /* Adjust this value for more or less rounding */overflow: hidden;  /* Ensures the content within the rounded border is also rounded */border: 5px solid #007BFF; /* Optional: Add a border color */}</style>"""
+st.markdown(custom_css_yt, unsafe_allow_html=True)
+st.markdown(youtube_video, unsafe_allow_html=True)
 st.write("")
 st.write("")
 st.write("")
@@ -50,3 +58,5 @@ with st.container(border=50):
    with I52:
        Image_52 = Image.open("Image_5.jpg")
        st.image(Image_52)
+st.write("© 2025 The Alunes Group. All rights reserved")
+st.write("© 2025 Powerhouse River Resort. All rights reserved")
