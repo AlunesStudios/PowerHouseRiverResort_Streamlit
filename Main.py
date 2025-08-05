@@ -3,7 +3,7 @@ from PIL import Image
 Main_Image = Image.open("PRR_Main_image.png")
 #---------------------------------------#
 st.set_page_config(page_icon=Main_Image, page_title="PowerHouse River Resort")
-st.image(Main_Image, width=230)
+st.image(Main_Image, width=350)
 st.header("PowerHouse River Resort", divider="green")
 st.markdown("**Tented resort facing the river with gentle rocking spacious swings..Relax & Enjoy the river bath in Crystal Clear Water and enjoy the lullaby like soothing rippling sounds from the river... Resort located bordering two streams (island) with Cascading Waterfalls where you can select whether to tryout the mesmerising Waterfall or the calm pool like water bed where you can enjoy unpolluted nature with Kingfishers or big . Experience walking through our Tea Plantation & Tea plucking and choose the tips you want to have a nice cup of green tea. The Restaurant is located inside the Mini Hydro where our customers can enjoy nice meals whether it will be plain rice and curry where the veggies comes from our organic vegetable garden, or a musical koththu or a scrumptious BBQ! Come and experience the Srilnkan Gray Hornbills and Endemic flying around. The natural fish therapy whenever you feels like. Enjoy all of these and work while you relax!**")
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
