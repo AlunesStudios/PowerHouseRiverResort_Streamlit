@@ -17,7 +17,7 @@ st.write("")
 st.write("")
 st.write("")
 youtube_video = """<iframe width="800" height="440" src="https://www.youtube.com/embed/gnJDmQ674DU" title="Visit Powerhouse River Resort..." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" class="yt" allowfullscreen></iframe>"""
-custom_css_yt = """<style>.yt {border-radius: 20px; /* Adjust this value for more or less rounding */overflow: hidden;  /* Ensures the content within the rounded border is also rounded */border: 5px solid #007BFF; /* Optional: Add a border color */}</style>"""
+custom_css_yt = """<style>.yt {border-radius: 20px; /* Adjust this value for more or less rounding */overflow: hidden;  /* Ensures the content within the rounded border is also rounded */border: 5px; /* Optional: Add a border color */}</style>"""
 st.markdown(custom_css_yt, unsafe_allow_html=True)
 st.markdown(youtube_video, unsafe_allow_html=True)
 st.write("")
