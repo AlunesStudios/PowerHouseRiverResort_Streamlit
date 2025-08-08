@@ -17,7 +17,7 @@ st.write("")
 st.write("")
 st.write("")
 youtube_video = """<iframe width="800" height="440" src="https://www.youtube.com/embed/gnJDmQ674DU" title="Visit Powerhouse River Resort..." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" class="yt" allowfullscreen></iframe>"""
-custom_css_yt = """<style>.yt {border-radius: 20px; /* Adjust this value for more or less rounding */overflow: hidden;  /* Ensures the content within the rounded border is also rounded */border: 5px; /* Optional: Add a border color */}</style>"""
+custom_css_yt = """<style>.yt {border-radius: 20px; /* Adjust this value for more or less rounding */overflow: hidden;  /* Ensures the content within the rounded border is also rounded */border: 5px #72FD9A ; /* Optional: Add a border color */}</style>"""
 st.markdown(custom_css_yt, unsafe_allow_html=True)
 st.markdown(youtube_video, unsafe_allow_html=True)
 st.write("")
@@ -28,7 +28,7 @@ with st.container(border=50):
    I1, I2, I3, I4, I5 = st.columns(5)
    with I1:
        Image_1 = Image.open("Image_1.jpg")
-       st.image(Image_1, width=700)
+       st.image(Image_1, width=700
    with I2:
        Image_2 = Image.open("Image_2.jpg")
        st.image(Image_2)
