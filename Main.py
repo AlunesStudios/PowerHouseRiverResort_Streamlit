@@ -28,7 +28,7 @@ with st.container(border=50):
    I1, I2, I3, I4, I5 = st.columns(5)
    with I1:
        Image_1 = Image.open("Image_1.jpg")
-       st.image(Image_1, width=700
+       st.image(Image_1, width=700)
    with I2:
        Image_2 = Image.open("Image_2.jpg")
        st.image(Image_2)
