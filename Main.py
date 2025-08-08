@@ -68,7 +68,7 @@ with Food_Pic:
         st.image([Food_Image_1,Food_Image_2,Food_Image_7,Food_Image_8,Food_Image_6,Food_Image_3,Food_Image_4,Food_Image_5])
 
 st.header("The Video")
-video = """<iframe width="300" height="100" src="https://www.youtube.com/embed/vo8R6brrvZE" title="Powerhouse River Resort | සත්කාරයේ චමත්කාරය | සොදුරු නවාතැන | Sonduru Nawathena" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="VIDEO"> </iframe>"""
+video = """<iframe width="400" height="200" src="https://www.youtube.com/embed/vo8R6brrvZE" title="Powerhouse River Resort | සත්කාරයේ චමත්කාරය | සොදුරු නවාතැන | Sonduru Nawathena" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="VIDEO"> </iframe>"""
 vid_css = """<style>.VIDEO {border-radius: 20px; /* Adjust this value for more or less rounding */overflow: hidden;  /* Ensures the content within the rounded border is also rounded */border: 5px solid #92E287; /* Optional: Add a border color */}</style>"""
 st.markdown(vid_css, unsafe_allow_html=True)
 st.markdown(video, unsafe_allow_html=True)
