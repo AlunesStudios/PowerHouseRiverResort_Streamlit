@@ -56,7 +56,7 @@ with Food_Info:
 with Food_Pic:
     st.header("")
     st.write("")
-    with st.container(border=20, height=435):
+    with st.container(border=20, height=440):
         Food_Image_1 = Image.open("310165472.jpg")
         Food_Image_2 = Image.open("310165482.jpg")
         Food_Image_3 = Image.open("310165499.jpg")
