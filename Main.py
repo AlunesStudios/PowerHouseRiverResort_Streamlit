@@ -56,7 +56,7 @@ with Food_Info:
 with Food_Pic:
     st.header("")
     st.write("")
-    with st.container(border=20, height=430):
+    with st.container(border=20, height=432):
         Food_Image_1 = Image.open("310165472.jpg")
         Food_Image_2 = Image.open("310165482.jpg")
         Food_Image_3 = Image.open("310165499.jpg")
@@ -67,7 +67,7 @@ with Food_Pic:
         Food_Image_8 = Image.open("310165545.jpg")
         st.image([Food_Image_1,Food_Image_2,Food_Image_7,Food_Image_8,Food_Image_6,Food_Image_3,Food_Image_4,Food_Image_5])
 
-st.header("The Video")
+st.header("The Video", divider="grey")
 video = """<iframe width="350" height="200" src="https://www.youtube.com/embed/vo8R6brrvZE" title="Powerhouse River Resort | සත්කාරයේ චමත්කාරය | සොදුරු නවාතැන | Sonduru Nawathena" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="VIDEO"> </iframe>"""
 vid_css = """<style>.VIDEO {border-radius: 20px; /* Adjust this value for more or less rounding */overflow: hidden;  /* Ensures the content within the rounded border is also rounded */border: 5px solid #92E287; /* Optional: Add a border color */}</style>"""
 st.markdown(vid_css, unsafe_allow_html=True)
