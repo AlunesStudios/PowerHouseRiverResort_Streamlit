@@ -3,7 +3,7 @@ from PIL import Image
 Main_Image = Image.open("PRR_Main_image.png")
 #---------------------------------------#
 st.set_page_config(page_icon=Main_Image, page_title="PowerHouse River Resort")
-st.image(Main_Image, width=250)
+st.image(Main_Image, width=350)
 st.header("PowerHouse River Resort", divider="green")
 st.markdown("**Unwind at our riverside tented resort set between two streams with waterfalls. Enjoy river baths, birdwatching, tea plucking, and organic meals at our hydro-powered restaurant. Relax with fish therapy or work in nature’s calm**")
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
