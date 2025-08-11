@@ -71,5 +71,5 @@ st.header("The video", divider="grey")
 st.header("The video", divider="grey")
 st.markdown("<style>video{border:5px solid #92E287;border-radius:20px;}</style>", unsafe_allow_html=True)
 
-vid = "Powerhouse River Resort _ සත්කාරයේ චමත්කාරය _ සොදුරු නවාතැන _ Sonduru Nawathena.mp4"
+vid = "Breakfast at Powerhouse River Resort.mp4"
 st.video(vid,autoplay=False)
