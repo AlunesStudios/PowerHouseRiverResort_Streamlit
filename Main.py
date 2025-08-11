@@ -67,8 +67,22 @@ with Food_Pic:
         Food_Image_8 = Image.open("310165545.jpg")
         st.image([Food_Image_1,Food_Image_2,Food_Image_7,Food_Image_8,Food_Image_6,Food_Image_3,Food_Image_4,Food_Image_5])
 
-st.header("The Video", divider="grey")
-video = """<iframe width="350" height="200" src="https://www.youtube.com/embed/vo8R6brrvZE" title="Powerhouse River Resort | සත්කාරයේ චමත්කාරය | සොදුරු නවාතැන | Sonduru Nawathena" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="VIDEO"> </iframe>"""
-vid_css = """<style>.VIDEO {border-radius: 20px; /* Adjust this value for more or less rounding */overflow: hidden;  /* Ensures the content within the rounded border is also rounded */border: 5px solid #92E287; /* Optional: Add a border color */}</style>"""
-st.markdown(vid_css, unsafe_allow_html=True)
-st.markdown(video, unsafe_allow_html=True)
+st.header("The video", divider="grey")
+video_html = """<div class="video-container"><iframe src="https://www.youtube.com/embed/vo8R6brrvZE" title="Powerhouse River Resort | සත්කාරයේ චමත්කාරය | සොදුරු නවාතැන | Sonduru Nawathena" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="VIDEO"> </iframe> </div> """
+
+# CSS for responsive iframe and styling
+video_css = """ <style>.video-container {position: relative; padding-bottom: 56.25%; /* 16:9 Aspect Ratio */ height: 0; overflow: hidden; max-width: 100%; border-radius: 20px; border: 5px solid #92E287; /* Optional border */}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+</style>
+"""
+
+st.markdown(video_css, unsafe_allow_html=True)
+st.markdown(video_html, unsafe_allow_html=True)
