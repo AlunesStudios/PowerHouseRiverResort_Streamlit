@@ -68,21 +68,8 @@ with Food_Pic:
         st.image([Food_Image_1,Food_Image_2,Food_Image_7,Food_Image_8,Food_Image_6,Food_Image_3,Food_Image_4,Food_Image_5])
 
 st.header("The video", divider="grey")
-video_html = """<div class="video-container"><iframe src="https://www.youtube.com/embed/vo8R6brrvZE" title="Powerhouse River Resort | සත්කාරයේ චමත්කාරය | සොදුරු නවාතැන | Sonduru Nawathena" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="VIDEO"> </iframe> </div> """
+st.header("The video", divider="grey")
+st.markdown("<style>video{border:5px solid #92E287;border-radius:20px;}</style>", unsafe_allow_html=True)
 
-# CSS for responsive iframe and styling
-video_css = """ <style>.video-container {position: relative; padding-bottom: 56.25%; /* 16:9 Aspect Ratio */ height: 0; overflow: hidden; max-width: 100%; border-radius: 20px; border: 5px solid #92E287; /* Optional border */}
-
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-}
-</style>
-"""
-
-st.markdown(video_css, unsafe_allow_html=True)
-st.markdown(video_html, unsafe_allow_html=True)
+vid = "Powerhouse River Resort _ සත්කාරයේ චමත්කාරය _ සොදුරු නවාතැන _ Sonduru Nawathena.mp4"
+st.video(vid,autoplay=False)
