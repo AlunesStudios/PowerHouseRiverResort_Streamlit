@@ -70,5 +70,4 @@ with Food_Pic:
 st.header("The video", divider="grey")
 st.markdown("<style>video{border:5px solid #92E287;border-radius:20px;}</style>", unsafe_allow_html=True)
 
-vid = "https://www.youtube.com/watch?v=vo8R6brrvZE"
-st.video(vid,autoplay=False)
+st.video("https://www.youtube.com/watch?v=vo8R6brrvZE")
