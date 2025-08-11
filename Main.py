@@ -68,7 +68,6 @@ with Food_Pic:
         st.image([Food_Image_1,Food_Image_2,Food_Image_7,Food_Image_8,Food_Image_6,Food_Image_3,Food_Image_4,Food_Image_5])
 
 st.header("The video", divider="grey")
-st.header("The video", divider="grey")
 st.markdown("<style>video{border:5px solid #92E287;border-radius:20px;}</style>", unsafe_allow_html=True)
 
 vid = "Breakfast at Powerhouse River Resort.mp4"
