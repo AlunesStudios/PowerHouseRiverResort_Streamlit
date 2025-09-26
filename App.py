@@ -1,6 +1,9 @@
 import streamlit as st
 from PIL import Image
 from datetime import date, timedelta
+
+from test import password
+
 Main_Image = Image.open("PRR_Main_image.png")
 st.set_page_config(page_title="PowerHouse River Resort")
 st.image(Main_Image, width=350)
@@ -267,5 +270,12 @@ with st.container(border=30):
                             st.write(f"**Amount of Pax: {Number_of_Adults + Number_of_Children_0_5 + Number_of_Children_6_11}**")
                             st.write(f"**Full Price: Rs.{Full_Price}**")
 
+                    Credit = st.text_input("Please Enter you Credit Card Number", type="password")
+                    if "Proceed" not in st.session_state:
+                        st.session_state.Proceed = False
+                    if st.button("Pay Now", use_container_width=True):
+                        st.session_state.Proceed = True
+                    if st.session_state.Proceed:
+                        st.success("Payment went through.")
 st.write("© 2025 The Alunes Group. All rights reserved")
 st.write("© 2025 Powerhouse River Resort. All rights reserved")
