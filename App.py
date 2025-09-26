@@ -271,11 +271,7 @@ with st.container(border=30):
                             st.write(f"**Full Price: Rs.{Full_Price}**")
 
                     Credit = st.text_input("Please Enter you Credit Card Number", type="password")
-                    if "Proceed" not in st.session_state:
-                        st.session_state.Proceed = False
                     if st.button("Pay Now", use_container_width=True):
-                        st.session_state.Proceed = True
-                    if st.session_state.Proceed:
                         st.success("Payment went through.")
 st.write("© 2025 The Alunes Group. All rights reserved")
 st.write("© 2025 Powerhouse River Resort. All rights reserved")
